@@ -9,8 +9,12 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function index(){
-        $trendings = Blog::latest()->take(5)->get();
+        $trendings = Blog::latest()->take(15)->get();
         return view('user.index', compact('trendings'));
+    }
+    public function carosel(){
+        $caroselData = Blog::latest()->take(4)->get();
+        return view('user.index', compact('caroselData'));
     }
 
     public function trending($id){

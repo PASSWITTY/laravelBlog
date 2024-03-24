@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Auth;
 
 // user
 Route::get('/', [UserController::class, 'index'])->name('landing');
+// Route::get('/', [UserController::class,'carosel']);
 Route::get('/trends/{id}',[UserController::class,'trending']);
 Route::post('/feedbacks', [App\Http\Controllers\UserController::class, 'feedBack'])->name('feedback');
 
@@ -23,4 +25,5 @@ Route::post('/update', [App\Http\Controllers\HomeController::class, 'updatePage'
 Route::get('/edit/{id}',[App\Http\Controllers\HomeController::class,'editBlog']);
 
 Route::get('/delete/{id}', [App\Http\Controllers\HomeController::class, 'delete']);
+
 Route::get('/testimonials', [App\Http\Controllers\HomeController::class, 'testimonials'])->name('testimonials');

@@ -16,7 +16,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +30,33 @@
 
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+      .card {
+        /* Add shadow and slight elevation */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        /* Enhance shadow on hover */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      /* Animate card entrance from left on page load */
+      .card-container.enter {
+        animation: enterFromLeft 0.5s ease-in-out;
+      }
+
+      @keyframes enterFromLeft {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    </style>
 
 </head>
 
@@ -71,37 +100,49 @@
             <div class="swiper sliderFeaturedPosts">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-1.jpg');">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end"
+                    style="background-image: url('assets/img/post-slide-1.jpg');">
                     <div class="img-bg-inner">
-                      <h2>The Best Homemade Masks for Face (keep the Pimples Away)</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                      <h2>What my blog is all about</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae
+                        minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore
+                        repudiandae quidem necessitatibus rem atque.</p>
                     </div>
                   </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-2.jpg');">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end"
+                    style="background-image: url('assets/img/post-slide-2.jpg');">
                     <div class="img-bg-inner">
                       <h2>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae
+                        minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore
+                        repudiandae quidem necessitatibus rem atque.</p>
                     </div>
                   </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-3.jpg');">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end"
+                    style="background-image: url('assets/img/post-slide-3.jpg');">
                     <div class="img-bg-inner">
                       <h2>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae
+                        minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore
+                        repudiandae quidem necessitatibus rem atque.</p>
                     </div>
                   </a>
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/post-slide-4.jpg');">
+                  <a href="single-post.html" class="img-bg d-flex align-items-end"
+                    style="background-image: url('assets/img/post-slide-4.jpg');">
                     <div class="img-bg-inner">
                       <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore repudiandae quidem necessitatibus rem atque.</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque est mollitia! Beatae
+                        minima assumenda repellat harum vero, officiis ipsam magnam obcaecati cumque maxime inventore
+                        repudiandae quidem necessitatibus rem atque.</p>
                     </div>
                   </a>
                 </div>
@@ -122,50 +163,40 @@
 
     <!-- ======= Post Grid Section ======= -->
 
-    <section id="posts" class="posts">
-      <div class="container" data-aos="fade-up">
-        <div class="row g-5">
-          <h1>Our Blog Tittles</h1>
-
-          <div class="container">
-            <div class="row">
-              @foreach ($trendings as $trending)
-              <div class="col border border-right">
-                <h2><strong>{{$trending->title}}</strong></h2>
-
-                <p>{{$trending->content}}</p>
-                <p><i>Created By: </i>{{$trending->author}} </p>
-                <a href="/trends/{{$trending->id}}" class="btn btn-success rounded">ReadMore...</a>
-                <p><i>published on: </i>{{$trending->created_at}}</p>
-              </div>
-              @endforeach
+    <div class="container">
+      <div class="row row-cols-md-4">
+        @foreach ($trendings as $trending)
+        <div class="container d-flex justify-content-center">
+          <div class="card mb-3 card-container enter" style="width: 30rem">
+            <div class="card-body">
+              <h2 class="card-title">{{$trending->title}}</h2>
+              <p class="card-text">
+                {{$trending->content}}
+              </p>
+              <a href="/trends/{{$trending->id}}" class="btn btn-primary">Read More</a>
+              <p class="card-text mt-3">
+                {{$trending->author}}
+              </p>
             </div>
           </div>
-
-          <!-- Trending Section -->
-
-          <div class="col-lg-4">
-
-            <div class="trending">
-              <h3>Trending</h3>
-              <ul class="trending-post">
-                @foreach ($trendings as $trending)
-                <li>
-                  <a href="/trends/{{$trending->id}}">
-                    <h3>{{$trending->title}}</h3>
-                    <span class="author">{{$trending->author}}</span>
-                  </a>
-                </li>
-                @endforeach
-              </ul>
-            </div>
-
-          </div> <!-- End Trending Section -->
         </div>
-      </div>
+        @endforeach
 
-      </div> <!-- End .row -->
       </div>
+    </div>
+
+
+    <!-- Trending Section -->
+
+    <div class="col-lg-4">
+
+
+    </div> <!-- End Trending Section -->
+    </div>
+    </div>
+
+    </div> <!-- End .row -->
+    </div>
     </section> <!-- End Post Grid Section -->
 
 
@@ -180,7 +211,9 @@
 
         <div class="row g-5">
           <h3 class="footer-heading">About Blog</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab, perspiciatis beatae autem deleniti voluptate nulla a dolores, exercitationem eveniet libero laudantium recusandae officiis qui aliquid blanditiis omnis quae. Explicabo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab, perspiciatis beatae autem deleniti
+            voluptate nulla a dolores, exercitationem eveniet libero laudantium recusandae officiis qui aliquid
+            blanditiis omnis quae. Explicabo?</p>
         </div>
       </div>
     </div>
@@ -214,7 +247,8 @@
 
   </footer>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
